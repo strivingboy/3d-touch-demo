@@ -17,7 +17,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self addShortcutItemDynamic:application];
     return YES;
+}
+
+- (void)addShortcutItemDynamic:(UIApplication *)application
+{
+    UIApplicationShortcutItem *shareItem = [[UIApplicationShortcutItem alloc] initWithType:@"Share" localizedTitle:@"分享" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare] userInfo:nil];
+    
+    UIApplicationShortcutItem *payItem = [[UIApplicationShortcutItem alloc] initWithType:@"Play" localizedTitle:@"播放" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypePlay] userInfo:nil];
+    
+    UIApplicationShortcutItem *pauseItem = [[UIApplicationShortcutItem alloc] initWithType:@"Pause" localizedTitle:@"暂停" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypePause] userInfo:nil];
+    
+    application.shortcutItems = @[shareItem,payItem,pauseItem];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:[NSString stringWithFormat:@"点击了%@",shortcutItem.localizedTitle] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:
+                             ^(UIAlertAction * _Nonnull action)
+    {
+        // Do other process
+        
+    }];
+    [alert addAction:action];
+    [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

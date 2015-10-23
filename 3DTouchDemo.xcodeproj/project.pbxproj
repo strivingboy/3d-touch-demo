@@ -15,6 +15,8 @@
 		D34F062C1BD509A200D59F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34F062A1BD509A200D59F5C /* LaunchScreen.storyboard */; };
 		D34F06371BD509A200D59F5C /* _DTouchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D34F06361BD509A200D59F5C /* _DTouchDemoTests.m */; };
 		D34F06421BD509A200D59F5C /* _DTouchDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D34F06411BD509A200D59F5C /* _DTouchDemoUITests.m */; };
+		D34F06511BD6036F00D59F5C /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34F06501BD6036F00D59F5C /* PreviewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D34F06621BD7844400D59F5C /* menu4.png in Resources */ = {isa = PBXBuildFile; fileRef = D34F06611BD7844400D59F5C /* menu4.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D34F063D1BD509A200D59F5C /* 3DTouchDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DTouchDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34F06411BD509A200D59F5C /* _DTouchDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DTouchDemoUITests.m; sourceTree = "<group>"; };
 		D34F06431BD509A200D59F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34F064F1BD6036F00D59F5C /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		D34F06501BD6036F00D59F5C /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		D34F06611BD7844400D59F5C /* menu4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +110,11 @@
 				D34F06201BD509A200D59F5C /* AppDelegate.m */,
 				D34F06221BD509A200D59F5C /* ViewController.h */,
 				D34F06231BD509A200D59F5C /* ViewController.m */,
+				D34F064F1BD6036F00D59F5C /* PreviewViewController.h */,
+				D34F06501BD6036F00D59F5C /* PreviewViewController.m */,
 				D34F06251BD509A200D59F5C /* Main.storyboard */,
 				D34F06281BD509A200D59F5C /* Assets.xcassets */,
+				D34F06611BD7844400D59F5C /* menu4.png */,
 				D34F062A1BD509A200D59F5C /* LaunchScreen.storyboard */,
 				D34F062D1BD509A200D59F5C /* Info.plist */,
 				D34F061C1BD509A200D59F5C /* Supporting Files */,
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34F062C1BD509A200D59F5C /* LaunchScreen.storyboard in Resources */,
+				D34F06621BD7844400D59F5C /* menu4.png in Resources */,
 				D34F06291BD509A200D59F5C /* Assets.xcassets in Resources */,
 				D34F06271BD509A200D59F5C /* Main.storyboard in Resources */,
 			);
@@ -273,6 +282,7 @@
 				D34F06241BD509A200D59F5C /* ViewController.m in Sources */,
 				D34F06211BD509A200D59F5C /* AppDelegate.m in Sources */,
 				D34F061E1BD509A200D59F5C /* main.m in Sources */,
+				D34F06511BD6036F00D59F5C /* PreviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +506,7 @@
 				D34F06481BD509A200D59F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34F06491BD509A200D59F5C /* Build configuration list for PBXNativeTarget "3DTouchDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				D34F064B1BD509A200D59F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34F064C1BD509A200D59F5C /* Build configuration list for PBXNativeTarget "3DTouchDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +524,7 @@
 				D34F064E1BD509A200D59F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
